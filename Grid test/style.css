@@ -1,0 +1,50 @@
+#repeatGrid{
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    grid-template-columns: repeat(3, 100px);
+}
+#gridTest{
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+}
+#gridArea{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    grid-template-areas: 
+    "header header header"
+    "main main side"
+    "footer footer footer";
+}
+#header{
+    grid-area: header;
+}
+#main{
+    grid-area: main;
+}
+#side{
+    grid-area: side;
+}
+#footer{
+    grid-area: footer;
+}
+#gridSidebar{
+    display: grid;
+    grid-template-columns: 100px 100px 100px; 
+}
+.A{
+    grid-column: 1 / span 2;
+}
+.B{
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+.C{
+    grid-column: 1;
+    grid-row: 2;
+}
+.D{
+    grid-column: 2;
+    grid-row: 2;
+}
