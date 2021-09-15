@@ -1,0 +1,56 @@
+/* Colors:
+#0F0A05 background
+#FFFFFF default text color
+#7A7A7A sub text color
+#81180E highlight color
+*/
+/* Fonts:
+Montserrat
+Josefin Sans
+Prompt 
+*/
+
+body {
+  background-color: #0f0a05;
+  font-family: montserrat;
+  font-weight: 100;
+  color: #ffffff;
+  margin-left: 100px;
+}
+@font-face {
+  font-family: "montserrat";
+  src: url(fonts/Montserrat-Medium.ttf);
+  font-style: normal;
+  font-weight: 100;
+}
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.navbar > div {
+  margin: 10px;
+}
+.navbar > div > a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
+.navbar > div > a:active {
+  color: #ffffff;
+}
+.introText > p {
+  font-size: 50px;
+}
+.introText > p > span {
+  color: #81180e;
+}
+
+.footer {
+  position: fixed;
+  right: 2em;
+  bottom: 2em;
+}
+.footer > div > a {
+  color: #7a7a7a;
+  text-decoration: none;
+}
