@@ -1,3 +1,31 @@
 #wrapper{
+    display: grid;
+    
+}
+#header{
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 200px;
+}
+#main{
+    background-color: aquamarine;
+    width: 100%;
+    height: 800px;
+}
+#side{
+    background-color: brown;
+    width: 100%;
+    height: 800px;
+}
+#footer{
+    background-color: darkorange;
+    width: 100%;
+    height: 200px;
+}
+.test{
+padding: 20px;
+}
+#logo, #navbar, #button{
+    background-color: #5AA561;
     
 }
