@@ -1,5 +1,5 @@
 /* Colors:
-#0F0A05 background
+#130208 background
 #FFFFFF default text color
 #7A7A7A sub text color
 #81180E highlight color
@@ -11,7 +11,7 @@ Prompt
 */
 
 body {
-  background-color: #0f0a05;
+  background-color: #130208;
   font-family: montserrat;
   font-weight: 100;
   color: #ffffff;
@@ -49,7 +49,7 @@ margin-top: 3em;
 
 .formInput{
   margin-top: 5px;
-  background-color:#0F0A05;
+  background-color:#130208;
   border: 1px solid #7a7a7a;
   color: #ffffff;
 }
