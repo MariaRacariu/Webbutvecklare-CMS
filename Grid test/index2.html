@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper>div {
+            background: #673647;
+            padding: 1em;
+        }
+
+        /*This takes every odd child and gives them another color*/
+        .wrapper>div:nth-child(odd) {
+            background: #da3b8d;
+        }
+
+        .wrapper {
+            display: grid;
+            /*This devides the page into 3 fractions. If you want it bigger you add another fraction so the second fraction will be double as big as the first fraction*/
+            /*********************************
+            grid-template-columns: 1fr 1fr 1fr; 
+            **********************************/
+            /*This will create 3 fraction so when you have a lot of content you don't have to write it all out*/
+            grid-template-columns: repeat(4, 1fr);
+            /*You can also tell it to create multiple different sizes. In this case it will create 2 1fr 2fr*/
+            /* 
+            grid-template-columns: repeat(2, 1fr 2fr); 
+            */
+            grid-gap: 1em;
+            /*This will make all rows 100px*/
+            grid-auto-rows: 100px;
+
+            /* grid-auto-rows: minmax(100px, auto); */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div>|</div>
+        <div>|</div>
+        <div>|</div>
+        <div>|</div>
+        <div>|</div>
+        <div>|</div>
+        <div>|</div>
+        <div>|</div>
+        <div>|</div>
+        <div>|</div>
+    </div>
+</body>
+
+</html>
