@@ -11,14 +11,33 @@
 </head>
 
 <body>
-    <div>
-        <img src="images/theBirthOfVenus.jpg" alt="" id="img" onclick="rotateImg()">
-        <img src="images/theKiss.jpg" alt="">
-        <img src="images/theSonOfMan.jpg" alt="">
-        <img src="images/ladyWithAnErmine.jpg" alt="">
-        <img src="images/wandererAboveTheSeaOfFog.jpg" alt="">
-        <img src="images/flamingJune.jpg" alt="">
-        <img src="images/theSwing.jpg" alt="">
+    <div class="main">
+        
+            <img src="images/theBirthOfVenus.jpg" alt="" id="img" onclick="scaleImg()" height="300" width="300" class="images">
+        
+        <div>
+            <img src="images/theKiss.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/theSonOfMan.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/ladyWithAnErmine.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/wandererAboveTheSeaOfFog.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/flamingJune.jpg" alt="">
+        </div>
+        <div>
+            <img src="images/theSwing.jpg" alt="">
+        </div>
+        <div id="pagePopUp" class="popUp">
+            <span class="closeBtn">&times;</span>
+            <img class="content" id="imgWindow">
+            <div id="infromation"></div>
+        </div>
     </div>
 </body>
 
