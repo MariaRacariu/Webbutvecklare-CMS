@@ -1,4 +1,54 @@
-body{
+.container{
     display: grid;
     justify-content: center;
+}
+.popUp{
+    position: fixed;
+    z-index: 1;
+    height: 70vh;
+    width: 90vw;
+    background-color: grey;
+    display: none;
+    
+
+}
+.imageContainer{
+    display: flex;
+    justify-content: center;
+    max-height: 50vh;
+    max-width: 900px;
+    padding: 2rem;
+}
+.infoContainer{
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+}
+
+.closeBtn {
+    position: fixed;
+    right: 5px;
+    top: 5px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.3;
+    display: none;
+    z-index: 1;
+}
+.closeBtn:hover {
+    opacity: 1;
+}
+.closeBtn:before, .closeBtn:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: #333;
+}
+.closeBtn:before {
+    transform: rotate(45deg);
+}
+.closeBtn:after {
+    transform: rotate(-45deg);
 }
